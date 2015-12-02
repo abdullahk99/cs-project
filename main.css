@@ -1,0 +1,524 @@
+
+body {
+    margin: 0 auto;
+    max-height: auto;
+    background: #ff6666;
+}
+
+ 
+.Viking{
+margin-top: 2px;
+margin-bottom: -2px;
+height: 60px;
+width: 60px;
+}
+
+/* RESPONSIVE CSS FOR NAVIGATION BAR
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+}
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CSS FOR LOG IN PAGE
+-------------------------------------------------- */
+#userName {
+    display:block;
+    margin-top: -200px;
+}
+
+.Annoucements{
+text-align: center;
+margin-top: 40px;
+color: #fff;
+font-weight: 600;
+line-height: 1.3em;
+}
+
+                                            /* Log in */
+input {
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.2);
+  display: block;
+  margin: 15px;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+/* CSS FOR BUTTON IN LOG IN 
+-------------------------------------------------- */
+.button
+{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+    line-height: 5px;
+  text-align: center;
+    
+  color: #0C5;
+
+  font-size: 24px;
+  font-family: "Nunito", `sans-serif;
+  font-weight: 300;
+  
+  margin: auto; 
+  
+  position: absolute; 
+  top:0; right:0; bottom:0; left:0;
+  
+  padding: 20px 0;
+  width: 220px;
+  height: 60px;
+
+  background: #0D6;
+  border: 1px solid #0D6;
+  color: #FFF;
+  overflow: hidden;
+  
+  transition: all 0.5s;
+}
+
+.button:hover, .button:active 
+{
+  text-decoration: none;
+  color: #0C5;
+  border-color: #0C5;
+  background: #FFF;
+}
+
+.button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+.button span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+.button:hover span, .button:active span 
+{
+  padding-right: 30px;
+}
+
+.button:hover span:after, .button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #0C5;
+  right: 0;
+  top: 50%;
+}
+
+
+/* FOR LOG IN SPT OUT NAME */
+#output{
+text-align: center;
+}
+
+
+/* ============================================================
+  PARALAX PRIMARY STRUCTURE
+============================================================ */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* ============================================================
+  PARALAX SECTIONS
+============================================================ */
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 30px;
+    color: #111;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1px;
+    text-align: center;
+    word-spacing: 200px;
+
+}
+
+.sub{
+color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    margine:0 0 72px;
+    text-align: center;
+}
+
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#backpic{
+  background-image: url("Pictures/144647871458922.jpeg")
+}
+section.module.parallax-1 {
+  background-image: url("Pictures/IMG_0948.jpg")
+}
+  section.module.parallax h1 {
+    font-size: 106px;
+  }
+
+.Home{
+    margin-top: -30px;
+    width: 20%;
+    height: 20%;
+    letter-spacing: 90px;
+    margin-right: 80px;
+}
+
+.image-container {
+ margin-left: 18%;
+}
+
+@media (max-width: 750px) {
+ .Home{
+     margin-right:10px;
+ }
+}
+
+@media (max-width: 600px) {
+    
+section.module h2 {
+    font-size:20px;
+ }
+}
+    
+.tiholder {
+    margin: auto;
+    background: rgba(255,255,255,.7); 
+    margin: 10px;
+    float: left;
+}
+
+.postitle {
+letter-spacing: 7px;
+text-align: center;
+margin-top: 150px;
+
+}
+
+.dateholder {
+    margin:auto;
+    text-align: center;
+    background: rgba(255,255,255,.7);  
+    margin: 10px;
+    float: left;    
+}
+
+.clubholder {
+    margin:auto;
+    background: rgba(255,255,255,.7);  
+    margin: 10px;
+    float: left;
+}
+
+
+#clubname {
+    text-align: center;
+}
+#title {
+    text-align: center;
+    colour:black;
+}
+
+
+.whitebox {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 900px;
+    padding: 105px;
+    background-color: white;
+
+}
+
+.box {
+    background-color: #FFCCCE;
+    width:960px;
+    margin-top:100px;
+    margin-left:160px;
+}
+
+#insertpost {
+  border:0px;
+  background: rgba(255,255,255);
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 2px; 
+  width: 930px;  
+  height: 504px;
+  color:black;
+  font-size:18px;
+}
+
+.createapostbox {
+    colour:black;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 8px;
+    padding: 20px;
+    background: rgba(255,255,255);  
+    float: left;
+}
+
+input#date{
+  color: black;
+}
+
+input.createapostbox::-webkit-input-placeholder {
+  color: black;
+}
+
+input#insertpost::-webkit-input-placeholder {
+  color: black;
+}
+
+
+.textbox-post {
+    color:black;
+}
+
+
+
+/************************************ FONTS ************************************/
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo|fontawesome|zocial);
+
+/************************************* END FONTS *************************************/
+.user-name {
+	font-size: 23px;
+    color: #fff;
+}
+
+.title {
+	font-size: 15px;
+}
+
+	.scnd-font-color {
+		color: #9099b7;
+	}
+
+.profile-picture {
+	border-radius: 100%;
+	overflow: hidden;
+	-webkit-box-sizing: content-box;
+  	-moz-box-sizing: content-box;
+  	box-sizing: content-box;	
+}
+	.big-profile-picture {
+		margin: 0 auto;		
+		border: 5px solid #50597b;
+		width: 150px;
+		height: 150px;
+	}
+
+/** CONTAINERS **/
+
+.block {
+margin-top: 100px;
+margin-bottom: 80px;
+background: #394264;
+border-radius: 5px;
+width: 500x;
+margin-left: auto;
+margin-right: auto;   
+		}
+
+/*******CONTAINER *********/
+				
+.user-name {
+margin: 25px 0 16px;
+text-align: center;
+}
+
+.profile-description {
+width: 410px;
+margin: 0 auto;
+text-align: center;
+				}
+				
+.profile-options {
+padding-top: 23px;
+}
+
+
+
+/*------------------------------------- Student Home Page Option Selectons -------------------------*/
+.speaker{
+    background-image: url(Pictures/noun_30589_cc.png);
+    display: inline-block;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.speaker:hover{
+background-image: url(Pictures/speakerr.png);    
+}
+
+
+.account{
+background-image: url(Pictures/Account.png);
+display: inline-block;
+margin-left: 99px;
+background-size: cover;
+height: 200px;
+width: 200px;
+}
+
+.account:hover{
+background-image: url(Pictures/profile.png)
+}
+
+.faq{
+background-image: url(Pictures/noun_7455_cc.png);
+display: inline-block;
+background-size: cover;
+margin-top: -300px;
+margin-bottom: 18px;
+margin-left: 830px;
+height: 200px;
+width: 200px;
+}
+
+.faq:hover{
+background-image: url(Pictures/faq.png)
+}
+
+.mpost{
+background-image: url(Pictures/Write%20A%20Post.png);
+display: inline-block;
+background-size: cover;
+height: 200px;
+width: 200px;
+}
+
+.mpost:hover{
+background-image: url(Pictures/mpost.png)
+}
+
+.faqq{
+background-image: url(Pictures/noun_7455_cc.png);
+display: inline-block;
+background-size: cover;
+margin-top: -300px;
+margin-bottom: 18px;
+margin-left: 830px;
+height: 200px;
+width: 200px;
+}
+
+.faqq:hover{
+background-image: url(Pictures/faq.png)
+}
+
+
+.accounttt{
+background-image: url(Pictures/Account.png);
+display: inline-block;
+margin-left: 99px;
+background-size: cover;
+height: 200px;
+width: 200px;
+}
+
+.accounttt:hover{
+background-image: url(Pictures/profile.png)
+}
