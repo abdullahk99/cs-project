@@ -2,7 +2,7 @@
 body {
     margin: 0 auto;
     max-height: auto;
-    background: #ff6666;
+    background: #ff9393;
 }
 
  
@@ -12,6 +12,38 @@ margin-bottom: -2px;
 height: 60px;
 width: 60px;
 }
+
+
+#go {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color:#00B200;
+    border:none;
+    color:#fff;
+    font-size:25px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+#go:hover {
+    background-color:#009900;
+    color:#fff;
+    transition: 1s background-color ease;
+}
+
+#go:active:focus {
+    background-color:#009900;
+    color:#fff;
+    outline:none;
+}
+
+#go:focus {
+    background-color:#009900;
+    color:#fff;
+    outline:none;
+}
+
+
 
 /* RESPONSIVE CSS FOR NAVIGATION BAR
 -------------------------------------------------- */
@@ -67,126 +99,45 @@ width: 60px;
 /* CSS FOR LOG IN PAGE
 -------------------------------------------------- */
 #userName {
+    margin-top: -230px;
+    margin-left: auto;
+    margin-right: auto;
     display:block;
-    margin-top: -200px;
+    
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.2);
+  display: block;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+#userName::-webkit-input-placeholder {
+  color: white;
+}
+
+#userName:focus::-webkit-input-placeholder {
+  color: #e74c3c;
 }
 
 .Annoucements{
 text-align: center;
-margin-top: 40px;
 color: #fff;
 font-weight: 600;
 line-height: 1.3em;
 }
 
                                             /* Log in */
-input {
-  padding: 16px;
-  border-radius:7px;
-  border:0px;
-  background: rgba(255,255,255,.2);
-  display: block;
-  margin: 15px;
-  width: 300px;  
-  font-size:18px;
-  height: 54px;
-}
 
-input::-webkit-input-placeholder {
-  color: white;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: #e74c3c;
-}
-
-/* CSS FOR BUTTON IN LOG IN 
--------------------------------------------------- */
-.button
-{
-  text-transform: uppercase;
-  letter-spacing: 2px;
-    line-height: 5px;
-  text-align: center;
-    
-  color: #0C5;
-
-  font-size: 24px;
-  font-family: "Nunito", `sans-serif;
-  font-weight: 300;
-  
-  margin: auto; 
-  
-  position: absolute; 
-  top:0; right:0; bottom:0; left:0;
-  
-  padding: 20px 0;
-  width: 220px;
-  height: 60px;
-
-  background: #0D6;
-  border: 1px solid #0D6;
-  color: #FFF;
-  overflow: hidden;
-  
-  transition: all 0.5s;
-}
-
-.button:hover, .button:active 
-{
-  text-decoration: none;
-  color: #0C5;
-  border-color: #0C5;
-  background: #FFF;
-}
-
-.button span 
-{
-  display: inline-block;
-  position: relative;
-  padding-right: 0;
-  
-  transition: padding-right 0.5s;
-}
-
-.button span:after 
-{
-  content: ' ';  
-  position: absolute;
-  top: 0;
-  right: -18px;
-  opacity: 0;
-  width: 10px;
-  height: 10px;
-  margin-top: -10px;
-
-  background: rgba(0, 0, 0, 0);
-  border: 3px solid #FFF;
-  border-top: none;
-  border-right: none;
-
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  transform: rotate(-45deg);
-}
-
-.button:hover span, .button:active span 
-{
-  padding-right: 30px;
-}
-
-.button:hover span:after, .button:active span:after 
-{
-  transition: opacity 0.5s, top 0.5s, right 0.5s;
-  opacity: 1;
-  border-color: #0C5;
-  right: 0;
-  top: 50%;
 }
 
 
 /* FOR LOG IN SPT OUT NAME */
 #output{
-text-align: center;
+margin-top: -80px;
+margin-left: 205px;
 }
 
 
@@ -291,7 +242,7 @@ section.module h2 {
 .postitle {
 letter-spacing: 7px;
 text-align: center;
-margin-top: 150px;
+margin-top: 30px;
 
 }
 
@@ -314,10 +265,7 @@ margin-top: 150px;
 #clubname {
     text-align: center;
 }
-#title {
-    text-align: center;
-    colour:black;
-}
+
 
 
 .whitebox {
@@ -330,40 +278,65 @@ margin-top: 150px;
 }
 
 .box {
-    background-color: #FFCCCE;
+    background-color: #EEF7FA;
+    border-radius: 10px;
     width:960px;
     margin-top:100px;
-    margin-left:160px;
+    margin-left:163px;
 }
 
-#insertpost {
+
+
+.postbox-student {
+    colour:black;
+    margin-right: 100px;
+    margin-left: 200px;
+    margin-top: 120px;
+    margin-bottom: -70px;
+    padding: 20px;
+    outline-color: black;
+    
+  padding: 16px;
+  border-radius:7px;
   border:0px;
-  background: rgba(255,255,255);
-  display: inline-block;
-  margin: 0 auto;
-  margin-bottom: 2px; 
-  width: 930px;  
-  height: 504px;
-  color:black;
+  background: rgba(255,255,255,.9);
+  display: block;
+  width: 300px;  
   font-size:18px;
+  height: 54px;
 }
 
 .createapostbox {
-    colour:black;
-    display: inline-block;
-    margin-right: auto;
-    margin-left: 8px;
-    padding: 20px;
-    background: rgba(255,255,255);  
-    float: left;
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    margin-top: 10px;
+  
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  display: block;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+.createapostbox::-webkit-input-placeholder {
+  color: white;
+}
+
+.createapostbox:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+
+input.createapostbox::-webkit-input-placeholder {
+  color: black;
 }
 
 input#date{
   color: black;
-}
-
-input.createapostbox::-webkit-input-placeholder {
-  color: black;
+    text-align: center;
 }
 
 input#insertpost::-webkit-input-placeholder {
@@ -371,9 +344,8 @@ input#insertpost::-webkit-input-placeholder {
 }
 
 
-.textbox-post {
-    color:black;
-}
+
+
 
 
 
@@ -442,6 +414,7 @@ padding-top: 23px;
 
 /*------------------------------------- Student Home Page Option Selectons -------------------------*/
 .speaker{
+    margin-left: 400px;
     background-image: url(Pictures/noun_30589_cc.png);
     display: inline-block;
     background-size: cover;
@@ -457,7 +430,7 @@ background-image: url(Pictures/speakerr.png);
 .account{
 background-image: url(Pictures/Account.png);
 display: inline-block;
-margin-left: 99px;
+margin-left: 85px;
 background-size: cover;
 height: 200px;
 width: 200px;
@@ -473,7 +446,7 @@ display: inline-block;
 background-size: cover;
 margin-top: -300px;
 margin-bottom: 18px;
-margin-left: 830px;
+margin-left: 50px;
 height: 200px;
 width: 200px;
 }
@@ -486,6 +459,8 @@ background-image: url(Pictures/faq.png)
 background-image: url(Pictures/Write%20A%20Post.png);
 display: inline-block;
 background-size: cover;
+margin-left: 415px;
+margin-bottom: 18px;
 height: 200px;
 width: 200px;
 }
@@ -500,7 +475,7 @@ display: inline-block;
 background-size: cover;
 margin-top: -300px;
 margin-bottom: 18px;
-margin-left: 830px;
+margin-left: 30px;
 height: 200px;
 width: 200px;
 }
@@ -513,7 +488,7 @@ background-image: url(Pictures/faq.png)
 .accounttt{
 background-image: url(Pictures/Account.png);
 display: inline-block;
-margin-left: 99px;
+margin-left: 88px;
 background-size: cover;
 height: 200px;
 width: 200px;
@@ -521,4 +496,363 @@ width: 200px;
 
 .accounttt:hover{
 background-image: url(Pictures/profile.png)
+}
+
+
+#table1 {
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+}
+
+#table1 td{
+border-bottom: 2px solid black;
+ border-right: 2px solid black;
+ padding-right: 4px;
+ padding-left: 4px;
+}
+
+
+.timetitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.paratitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.clubtitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.tabletitle {
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+#password {
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+    display: block;
+  
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.2);
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+#password::-webkit-input-placeholder {
+  color: white;
+}
+
+#password:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+
+}
+
+
+
+
+
+.male-female {
+}
+
+.insertpost {
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  display: block;
+  margin: 15px;
+  width: 900px;  
+  font-size:18px;
+  height: 204px;
+  outline-color: black;
+  border: solid black 1px;
+  
+}
+
+}
+
+.inserpost::-webkit-input-placeholder {
+  color: white;
+}
+
+.insertpost:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gender-student {
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+
+
+
+
+.postbutt {
+    margin-left: 450px;
+}
+
+.anntitle {
+letter-spacing: 4px;
+text-align: center;
+margin-top: 150px;
+margin-bottom: -100px;
+}
+
+.gender-stu {
+    colour:black;
+    margin-left: 700px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 20px;
+    outline-color: black;
+    
+  padding: 16px;
+  border-radius:7px;
+  border:0px;
+  background: rgba(255,255,255,.9);
+  display: block;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+
+
+
+
+.textbox-post {
+    margin-top: 20px;
+}
+
+.choice-title {
+letter-spacing: 4px;
+text-align: center;
+ font-size: 30px;
+
+}
+
+
+
+.createapostbox-choice {
+    margin-top: 80px;
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    display: block;
+  
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+}
+
+
+
+
+
+#gender-studentchocie {
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    margin-top: 70px;
+  
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  display: block;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+.choiceagender {
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    margin-left: 310px;
+    margin-top: -54px;
+  
+  padding: 16px;
+  border-radius:7px;
+  display: block;
+  background: rgba(255,255,255,.9);
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}    
+.choiceagender::-webkit-input-placeholder {
+  color: white;
+}
+ .choiceagender:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+        
+ input.choiceagender::-webkit-input-placeholder {
+  color: black;
+}    
+}
+
+
+.genderstudent {
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    margin-top: 30px;
+  
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  display: inline-block;
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+
+.genderstudent::-webkit-input-placeholder {
+  color: white;
+}
+
+.genderstudent:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+input.genderstudent::-webkit-input-placeholder {
+  color: black;
+}
+
+
+.gradepick {
+    text-align: center;
+    outline-color: black;
+    border: solid black 1px;
+    margin-bottom: 80px;
+  
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}   
+
+ .gradepick::-webkit-input-placeholder {
+  color: white;
+}
+                
+.gradepick:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}                
+
+ input.gradepick::-webkit-input-placeholder {
+  color: black;
+}         
+
+.genderpick {
+    text-align: right;
+    outline-color: black;
+    border: solid black 1px;
+margin-top: 90px;
+    display: block;
+    
+  padding: 16px;
+  border-radius:7px;
+  background: rgba(255,255,255,.9);
+  width: 300px;  
+  font-size:18px;
+  height: 54px;
+}
+                
+ .genderpick::-webkit-input-placeholder {
+  color: white;
+}   
+
+ .genderpick:focus::-webkit-input-placeholder {
+  color: #e74c3c;
+}
+
+input.genderpick::-webkit-input-placeholder {
+  color: black;
+}
+}
+
+
+
+
+
+.postbox-choice2 {
+    float: right;
+}
+
+.postbox-choice {
+    float: right;
+}
+
+.Gender-Title {
+margin-top: 40px;
+margin-left: 80px;
+}
+
+.title-gender {
+    float: right;
+}
+
+.title-club {
+    float: left;
+}
+
+.Gender1-Title {
+    text-align: center;
+}
+
+
+
+
+
+.Club-setting {
+float: right;
+margin-top: 48px;
+margin-right: -170px;
+font-size: 20px;
+}
+
+.Gender-setting {
+    float: left;
+    margin-top: 48px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.table-header {
+letter-spacing: 4px;
+text-align: center;
+margin-bottom: 30px;
+font-size: 30px;
 }

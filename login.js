@@ -6,8 +6,10 @@
 function validateForm() {
         var un = document.getElementById("userName").value;
         var pw = document.getElementById("password").value;
-        var username = "Abdullah"; 
+        var username = "Teacher"; 
         var password = "hi";
+        var username2 = "Student";
+        var password2 = "hi";
         if ((un == username) && (pw == password)) {
              $('#output').html("Hello " + username); 
             
@@ -17,11 +19,18 @@ function validateForm() {
             return false;
         }
     
-// Wrong username and pasword enter
+// Second username and password function
 
-        else {
-            alert ("Login was unsuccessful, please check your username and password");
+        else if ((un == username2) && (pw == password2)) {
+             $('#output').html("Hello " + username2); 
+                setInterval(function() {window.location = "StudentHome.html";}, 500);
+                return false;
+            
         }
+            else {
+            alert ("Login was unsuccessful, please check your username and password");
+
+            }
       } 
 
   

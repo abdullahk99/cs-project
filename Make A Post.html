@@ -52,22 +52,44 @@
         <div class="container-fluid">
             <div class="row">
         <div class="box col-md-12">
-            
-                    <!-- Title  -->
+<!-------------------------------------------- Title ------------------------------------------------------>
            
-            <h1 class="postitle">Create A Post</h1>
+        <h1 class="postitle">Create A Post</h1>
         
-    
-                    <!-- text boxes --> 
-    <div class="textbox-post">
-        <input id="title" class="createapostbox" type="text" placeholder="Title"> </input>
+
+<!---------------------------------------- Annoucment Text Boxes  ----------------------------------------------->
+<center>
+<div class="textbox-post">
+        
+        <input id="title" class="createapostbox" type="text" placeholder="Title"> </input> 
         <input id="date" class="createapostbox" type="date" placeholder="Date"> </input> 
-        <input id="clubname" class="createapostbox" type="text" placeholder="Club Name"> </input>   
-        <input id="insertpost" class="insertpost" type="text" placeholder="Write Post"> </input>
-        </div>
-                  <!-- Post Button -->
-    <button onclick="getData()"> post </button>
+        <select id="clubname" class="createapostbox" type="text" placeholder= "Club Name"> 
+                <option disabled selected>Select your Culb</option>
+                  <option>Tech</option>
+                  <option>Photography</option>
+                  <option>Events</option>
+                  <option>Cricket</option>
+                  <option>Arts</option>
+                  <option>For Everyone!</option>
+            </select>
+        
+        <select  id="gender" class="createapostbox" type="text"> 
+                 <option disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>For Everyone!</option>
+        </select>
+            
+            
+        
+        <input id="insertpost" class="insertpost" type="text" placeholder="Write Post"> </input>        </div>
+        
+</center>
+                  
+<!---------------------------------------- Post Button  -------------------------------------------------->
+    
+    <button type="button" class="btn btn-success" onclick="getData()">Let's Post!</button>
+    
     
 </body>
-
 </html>

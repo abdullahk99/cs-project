@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head> 
-         <link rel="stylesheet" href="bootstrap.css" text="text/css"> -->
+                <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+         <link rel="stylesheet" href="bootstrap.css" text="text/css"> 
+                 <script src="bootstrap.js"></script>
+<script src="Options.js"></script>
             <link rel="stylesheet" href="main.css" text="text/css">
             <script src="student.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
        
         <!--     <script src="bootstrap.js"></script> 
         <link href="css/hover.css" rel="stylesheet" media="all">-->
@@ -49,32 +50,81 @@
           
       </div>
     </div>
-           
-        
-<!--------------------------------------- MIDDLE-CONTAINER -------------------------------------------------->
-        
-<div class="middle-container container">
-<div class="profile block"> <!-- PROFILE (MIDDLE-CONTAINER) -->
-<div class="profile-picture big-profile-picture clear">
- <img width="250px" alt="Cricket Picture" src="Pictures/190171.jpg" >
-                    </div>          
-            
-    <h1 class="user-name" id="club"></h1>
-        <div class="profile-description">
-                <p class="scnd-font-color" id="time"></p>
-                <p class="scnd-font-color" id="title"></p>
-                <p class="scnd-font-color" id="post"></p>
-        </div>
-<ul class="profile-options horizontal-list">
-    
-    </ul>
-    </div>
-            </div>
-                </div>
-            </div>
-        </div>
 
-    
         
+ <!----------------------------------------Choose your Settings -------------------------------------------------->
+      
+        <div class= "setting-choice">
+       <div class="container-fluid"> 
+        <div class="row"> 
+        <div class="box col-md-12"> 
+        
+        <h1 class="choice-title"
+            >Customize Your Announcements</h1>
+        
+        <h2 class="Gender-setting"> Gender </h2>   
+    
+         <div class= "postbox-choice">
+            <select id="clubnamestudent" class="createapostbox-choice" type="text" placeholder= "Club Name"> 
+                  <option>All</option>
+                  <option>Tech</option>
+                  <option>Photography</option>
+                  <option>Events</option>
+                  <option>Cricket</option>
+                  <option>Arts</option>
+                  <option>All</option>
+            </select> <br><br>
+        </div>
+  
+    <h2 class="Club-setting"> Club </h2>    
+             
+    <div class= "postbox-choice2">
+         <select class="genderpick" id="genderstudent" type="text"> 
+                 <option>All</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>For Everyone!</option>
+        </select>
+    </div>
+<!------------------------------------------------Update Button ------------------------------------------------>           <button type="button" class="btn btn-success1" onclick="setItem()">Update!</button>
+        
+        </div>  
+           
+        <div class= "setting-choice">
+       <div class="container-fluid"> 
+        <div class="row"> 
+        <div class="box col-md-12">
+            
+            <h1 class="table-header"> View Announcements! </h1>
+                <div id="announcement-holder" class="container">
+                        <div id="tableTitles">
+                            <div class="col-md-2"><h4>Title</h4></div>
+                            <div class="col-md-4"><h4>Description</h4></div>
+                            <div class="col-md-2"><h4>Club Name</h4></div>
+                            <div class="col-md-2"><h4>Gender</h4></div>
+                           <div class="col-md-2"><h4>Time</h4></div>
+
+
+                        </div>
+                        <div id="title" class="col-md-2">
+                            (none)
+                        </div>
+                        <div id="post" class="col-md-4">
+                            (none)
+                        </div>
+                        <div id="club" class="col-md-2">
+                            (none)
+                        </div>
+                        <div id="gender1" class="col-md-2">
+                            (none)
+                        </div>
+                        <div id="time" class="col-md-2">
+                            (none)
+                        </div>
+					</div>
+                
+<!-------------------------------------------------END--------------------------------------------------------->
+    
     
     </body>
+</html>

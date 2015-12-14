@@ -8,7 +8,8 @@ function getData() {
         title :$("#title").val(),
         date: $("#date").val(),
         clubname: $("#clubname") .val (),
-        insertpost: $("#insertpost") .val ()
+        insertpost: $("#insertpost") .val (),
+        gender: $("#gender") .val (),
     };
     index ++;
     var storeObject = JSON.stringify(announcement);
