@@ -14,5 +14,5 @@ function getData() {
     index ++;
     var storeObject = JSON.stringify(announcement);
     localStorage.setItem("userData", storeObject);
-    
+    $("#anything").trigger("reset"); 
 }

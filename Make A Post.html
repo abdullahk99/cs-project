@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <link rel="stylesheet" href="bootstrap.css" text="text/css"> 
-         <link rel="stylesheet" href="main.css">
-         <script src="post.js"> </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-         <script src="bootstrap.js"></script>
-        <link href="css/hover.css" rel="stylesheet" media="all">
-        
+            <link rel="stylesheet" href="bootstrap.css" text="text/css"> 
+            <link rel="stylesheet" href="main.css">
+            <script src="post.js"> </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="bootstrap.js"></script>
+            <link href="css/hover.css" rel="stylesheet" media="all">
     </head>
     
     <body> 
@@ -26,11 +25,12 @@
                 <span class="icon-bar"></span>
               </button>
               <!--<a class="navbar-brand" href="#">North Park</a>-->
+                <a href="index.html">
             <img class="Viking" src="Pictures/noun_30147_cc%20copy.png"/>
+                    </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav pull-right navbar-nav">
-                <li class="about"><a href="#">About</a></li>
                 <li><a href="#help">Help</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media <span class="caret"></span></a>
@@ -47,12 +47,12 @@
           
       </div>
     </div>
-<!---------------------------------------- Background Box  -------------------------------------------------->
+<!---------------------------------------- Background Box  ------------------------------------------------------>
         
         <div class="container-fluid">
             <div class="row">
         <div class="box col-md-12">
-<!-------------------------------------------- Title ------------------------------------------------------>
+<!-------------------------------------------- Title ------------------------------------------------------------>
            
         <h1 class="postitle">Create A Post</h1>
         
@@ -61,6 +61,8 @@
 <center>
 <div class="textbox-post">
         
+    <form id= "anything">
+    
         <input id="title" class="createapostbox" type="text" placeholder="Title"> </input> 
         <input id="date" class="createapostbox" type="date" placeholder="Date"> </input> 
         <select id="clubname" class="createapostbox" type="text" placeholder= "Club Name"> 
@@ -80,16 +82,17 @@
                 <option>For Everyone!</option>
         </select>
             
-            
         
         <input id="insertpost" class="insertpost" type="text" placeholder="Write Post"> </input>        </div>
-        
+                   </form> 
+
 </center>
                   
-<!---------------------------------------- Post Button  -------------------------------------------------->
+<!---------------------------------------- Post Button  --------------------------------------------------------->
     
     <button type="button" class="btn btn-success" onclick="getData()">Let's Post!</button>
     
-    
+<!---------------------------------------------------END--------------------------------------------------------->
+
 </body>
 </html>
